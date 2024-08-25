@@ -1,0 +1,142 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:'poppins',sans-serif;
+    background: url("WhatsApp Image 2024-04-17 at 6.21.37 AM.jpeg");
+   
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    font-size: 2.1rem;
+    font-weight:600 ;
+    color: #fff;
+}
+.navbar .logo span{
+    color: #c06b3E;
+}
+
+
+.navbar .menu-lines{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s ease;
+
+}
+.navbar a:hover{
+    color: #c06b3E;
+
+}
+.hero-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-section .content{
+     color: #fff;
+     max-width: 1200px;
+     width: 100%;
+     margin: 0 auto;
+}
+
+.hero-section .content h1{
+    font-size: 3rem;
+    max-width: 600px;
+    
+}
+.hero-section .content p{
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+.hero-section .content button{
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 2rex;
+    font-weight: 1000;
+    margin-top: 38px;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.hero-section .content button:hover{
+    color: #fff;
+    background: #c06b3E;
+}
+
+#menu-btn{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+ #close-menu-btn{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width :850px) {
+    #close-menu-btn,#menu-btn{
+        display: block;
+    }
+    .navbar .menu-lines{
+        position: fixed;
+        left: -260px;
+        top: 0;
+        flex-direction: column;
+        width: 260px;
+        height: 100vh;
+        background: #fff;
+        padding: 70px 40px 0;
+        transition: left 0.15s ease;
+    
+    }
+     header.show-mobile-menu .navbar .menu-lines{
+        left: 0;
+     }
+    .navbar a{
+        color: #000;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
